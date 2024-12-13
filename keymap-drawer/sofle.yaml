@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, '|', lower, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, PLAY PAUSE, N, M, ',', ., /, RSHFT, LCTRL, LALT, LGUI, SPACE, lower, BACKSPACE, ENTER, '-', RALT, raise]
+    Z, LEFT ALT, X, C, V, MUTE, PLAY PAUSE, B, N, M, ',', ., /, LCTRL, LGUI, SPACE, SPACE, lower, BACKSPACE, ENTER, '-', RALT, raise]
   lower:
   - '`'
   - F1
