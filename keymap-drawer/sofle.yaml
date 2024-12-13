@@ -1,9 +1,9 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, |, raise, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LCTRL, LALT, LGUI, lower, SPACE, SPACE, raise, RCTRL, RALT, RGUI]
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, '|', lower, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, MUTE, PLAY PAUSE, N, M, ',', ., /, RSHFT, LCTRL, LALT, LGUI, lower, SPACE, ENTER, raise, '-', RALT, RGUI]
   lower:
-  - {t: ▽, type: trans}
+  - '`'
   - F1
   - F2
   - F3
@@ -15,30 +15,30 @@ layers:
   - F9
   - F10
   - F11
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - CAPSLOCK
+  - HOME
+  - UP ARROW
+  - END
+  - PG UP
+  - '5'
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
   - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - {type: held}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PAGE DOWN
   - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
+  - '{'
+  - '}'
+  - '['
+  - ']'
   - (
   - )
-  - '|'
   - {t: ▽, type: trans}
   - '='
   - '-'
@@ -56,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -64,23 +64,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - PREV
+  - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
+  - INS
+  - PSCRN
+  - CMENU
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - UP
-  - END
-  - PG UP
   - {t: ▽, type: trans}
   - PG UP
   - {t: ▽, type: trans}
@@ -89,10 +89,10 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG DN
+  - LALT
+  - LCTRL
+  - LSHFT
+  - {t: ▽, type: trans}
   - CLCK
   - PG DN
   - LEFT
@@ -149,7 +149,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - RGB BRD
   - RGB BRI
   - ''
@@ -178,7 +178,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {type: held}
